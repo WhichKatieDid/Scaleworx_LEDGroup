@@ -1,0 +1,15 @@
+{
+  "name": "Scaleworx LED Group",
+  "keywords": "NeoPixel, DotStar, graphics",
+  "description": "A wrapper library that makes use of Neopixel and DotStar LEDs, abstracting grouping and layout oddities",
+  "homepage": "https://github.com/BlainHamon/Scaleworx_LEDGroup",
+  "repository":
+  {
+    "type": "git",
+    "url": "https://github.com/BlainHamon/Scaleworx_LEDGroup"
+  },
+  "version": "1.0.0",
+  "frameworks": "arduino",
+  "platforms": "*"
+}
+
