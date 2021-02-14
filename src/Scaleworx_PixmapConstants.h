@@ -1,6 +1,6 @@
 //
 //  Scaleworx_PixmapConstants.h
-//  
+//
 //
 //  Created by Blain Hamon on 6/17/19.
 //
@@ -10,13 +10,16 @@
 
 #include <inttypes.h>
 
-extern const uint8_t map8x8TopLeftRightward[];
-extern const uint8_t map8x8BottomLeftRightward[];
-extern const uint8_t map8x8TopRightLeftward[];
-extern const uint8_t map8x8BottomRightLeftward[];
-extern const uint8_t map8x8TopLeftDownward[];
-extern const uint8_t map8x8BottomLeftUpward[];
-extern const uint8_t map8x8TopRightDownward[];
-extern const uint8_t map8x8BottomRightUpward[];
+extern const uint8_t map8x8ZigZagTopLeftRightward[];
+extern const uint8_t map8x8ZigZagBottomLeftRightward[];
+extern const uint8_t map8x8ZigZagTopRightLeftward[];
+extern const uint8_t map8x8ZigZagBottomRightLeftward[];
+extern const uint8_t map8x8ZigZagTopLeftDownward[];
+extern const uint8_t map8x8ZigZagBottomLeftUpward[];
+extern const uint8_t map8x8ZigZagTopRightDownward[];
+extern const uint8_t map8x8ZigZagBottomRightUpward[];
+
+extern const uint8_t map8x8TopLeftToRight[];
+extern const uint8_t map8x8TopRightToLeft[];
 
 #endif /* Scaleworx_PixmapConstants_h */
