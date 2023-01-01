@@ -1,6 +1,6 @@
 //
 //  Scaleworx_LEDGroup.h
-//  
+//
 //
 //  Created by Blain Hamon on 4/25/19.
 //
@@ -32,6 +32,7 @@ public:
   void setRow(uint8_t y, Scaleworx_RGBColor color, uint8_t white);
   void setRow(uint8_t y, Scaleworx_RGBColor color);
   void set(uint16_t i, Scaleworx_RGBColor color);
+  void set(uint16_t i, Scaleworx_RGBColor color, uint8_t white);
   void fill(Scaleworx_RGBColor color);
   void fill(Scaleworx_RGBColor color, uint8_t white);
   void off();

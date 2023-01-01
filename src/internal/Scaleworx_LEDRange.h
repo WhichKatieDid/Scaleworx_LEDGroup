@@ -1,6 +1,6 @@
 //
 //  Scaleworx_LEDRange.h
-//  
+//
 //
 //  Created by Blain Hamon on 4/25/19.
 //
@@ -106,10 +106,14 @@ public:
         }
     }
   }
-  
+
   void set(uint16_t i, Scaleworx_RGBColor color) {
     if ((i + rangeStart) > rangeEnd) {return;}
     setUnsafe(i + rangeStart, color);
+  }
+  void set(uint16_t i, Scaleworx_RGBColor color, uint8_t white) {
+    if ((i + rangeStart) > rangeEnd) {return;}
+    setUnsafe(i + rangeStart, color, white);
   }
   void fill(Scaleworx_RGBColor color) {
     for(uint16_t i = rangeStart; i < rangeEnd; i++) {

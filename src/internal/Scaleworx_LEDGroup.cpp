@@ -1,6 +1,6 @@
 //
 //  Scaleworx_LEDGroup.cpp
-//  
+//
 //
 //  Created by Blain Hamon on 4/25/19.
 //
@@ -33,6 +33,12 @@ void Scaleworx_LEDGroup::setRow(uint8_t y, Scaleworx_RGBColor color) {
 void Scaleworx_LEDGroup::set(uint16_t i, Scaleworx_RGBColor color) {
   range->set(i, color);
 }
+
+void Scaleworx_LEDGroup::set(uint16_t i, Scaleworx_RGBColor color, uint8_t white) {
+  range->set(i, color, white);
+}
+
+
 void Scaleworx_LEDGroup::fill(Scaleworx_RGBColor color) {
   range->fill(color);
 }
