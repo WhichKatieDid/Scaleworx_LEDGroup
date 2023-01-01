@@ -1,6 +1,6 @@
 //
 //  Scaleworx_LEDManager.cpp
-//  
+//
 //
 //  Created by Blain Hamon on 5/2/19.
 //
@@ -57,3 +57,11 @@ Scaleworx_LEDGroup Scaleworx_LEDManager::addGroup(int16_t count) {
   *nextGroup = createRange(lastPix, count);
   return  Scaleworx_LEDGroup(*nextGroup);
 };
+
+  void Scaleworx_LEDManager::fill(Scaleworx_RGBColor color) {
+      Scaleworx_LEDRange * nextGroup = firstRange;
+      while (nextGroup != 0) {
+        nextGroup->fill(color);
+        nextGroup = nextGroup->next;
+      }
+  }

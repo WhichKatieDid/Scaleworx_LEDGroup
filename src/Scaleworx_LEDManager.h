@@ -1,6 +1,6 @@
 //
 //  Scaleworx_LEDManager.h
-//  
+//
 //
 //  Created by Blain Hamon on 5/2/19.
 //
@@ -31,6 +31,7 @@ public:
 
   Scaleworx_LEDGroup addGroup(int16_t start, int16_t count);
   Scaleworx_LEDGroup addGroup(int16_t count);
+  void fill(Scaleworx_RGBColor color);
 };
 
 
